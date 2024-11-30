@@ -1,0 +1,373 @@
+/* Reset */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+body {
+    line-height: 1.6;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    color: #555;
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+}
+.nav-left {
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 70px;
+
+}
+.nav-right {
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 70px;
+}
+.nav-left:hover, .nav-right:hover {
+    text-decoration: underline;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+.hero-content {
+    max-width: 50%;
+    margin-left: 60px;
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+.hero-content p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #555;
+}
+.hero-image {
+    margin-right: 50px;
+}
+.cta-button {
+    background-color: #bdd5b7;
+    color: #555;
+    border: 5px #555;
+
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.cta-button:hover {
+    background-color: #b0c8aa;
+}
+.hero-image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+.feature-card {
+    text-align: center;
+    width: 30%;
+}
+.feature-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.feature-card h2 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* contact Section */
+.contact {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-size: x-small;
+}
+.contact-info{
+    font-size: x-small;
+    color: 555;
+}
+/* Resume Page Styles */
+.resume-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+.resume-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+.resume-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.resume-download .resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #bdd5b7;
+    color: #555;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.resume-download .resume-btn:hover {
+    background-color: #b0c8aa;
+}
+.resume-viewer iframe {
+    margin-top: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.resume-highlights {
+    margin-top: 40px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.resume-highlights h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+.resume-highlights ul {
+    list-style-type: disc;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+.resume-highlights li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Main About Me Section */
+.about-page {
+    background-color: #f5f5f5;
+}
+.about-me {
+    text-align: center;
+    margin: 40px 0;
+    background-color: #f5f5f5;
+}
+
+.about-me h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Content Layout */
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Introduction */
+.intro {
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.intro h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.horizontal-photo {
+    grid-column: span 2; /* Makes the horizontal photo span across both columns */
+    grid-row: 1; /* Places it in the first row */
+}
+
+.vertical-photo {
+    grid-row: 2; /* Places vertical photos in the second row */
+}
+
+/* Styling for Photos */
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Description Section */
+.description {
+    padding-top: 40px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.description h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+/* Projects Section */
+.project-page {
+    background-color:#f5f5f5;
+    
+}
+.projects {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.projects h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.project-grid {
+    display: grid;
+    gap: 20px;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.project-card {
+    background-color: #bdd5b7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    align-items: center;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+    padding: 8px;
+}
+
+.project-link {
+    background-color: white;
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    background-color: #e4e4e4;
+}
+
+/* Project Section */
+.project1-page {
+    background-color: #f5f5f5;
+}
+.project {
+    padding: 40px;
+    text-align: center;
+}
+
+.project h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Image Gallery Section */
+.image-gallery {
+    display: block;  /* Ensures vertical stacking of slides */
+    overflow-y: scroll;
+    max-height: 80vh;  /* Limits the height of the gallery */
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.image-slide {
+    display: block;
+    width: 100%; /* Ensure each slide fills the available width */
+    margin-bottom: 20px; /* Add space between each slide */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.image-slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-slide p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
